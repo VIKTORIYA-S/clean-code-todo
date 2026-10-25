@@ -69,8 +69,6 @@ const editTask = function () {
   const isEditMode = listItem.classList.contains("editMode");
 
   if (isEditMode) {
-    //switch to .editmode
-    //label becomes the inputs value.
     label.innerText = editInput.value;
     editBtn.innerText = "Edit";
   } else {
@@ -78,7 +76,6 @@ const editTask = function () {
     editBtn.innerText = "Save";
   }
 
-  //toggle .editmode on the parent.
   listItem.classList.toggle("editMode");
 };
 
